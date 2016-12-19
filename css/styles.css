@@ -1,5 +1,6 @@
-/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
-@font-face {
+/* ----------------------- Paramètres Globaux ----------------------- */
+
+@font-face { /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
     font-family:"Aller Light";src:url("../fonts/Aller_Light/Aller_Lt.eot?") 
     format("eot"),url("../fonts/Aller_Light/Aller_Lt.woff") 
     format("woff"),url("../fonts/Aller_Light/Aller_Lt.ttf") 
@@ -11,10 +12,140 @@ body{
     font-family: "Aller Light", Helvetica, Verdana, Arial, Sans-Serif;
 }
 
-.aller{
-    font-family: "Aller Light";
+.page_wrapper{
+    
 }
 
-.normal{
-    font-family: Helvetica, Verdana, Arial, Sans-Serif;
+
+/* ----------------------- Header ----------------------- */
+
+/* ----- Logo Banner ----- */
+
+div.header{
+    
+}
+
+div.headerLogoBanner{
+    
+}
+
+div#logo{
+    
+}
+
+div#loginContainer{
+    
+}
+
+div#search{
+    
+}
+
+div#login{
+    
+}
+
+/* ----- Navigation Menu ----- */
+
+nav{
+    
+}
+
+div.navMenu{
+    
+}
+
+ul.navMenu{
+    
+}
+
+li.navMenu{
+    
+}
+
+ul.subNavMenu{
+    
+}
+
+li.subNavMenu{
+    
+}
+
+div.navIcones{
+    
+}
+
+div.iconesItems{
+    
+}
+
+
+/* ----------------------- Caroussel ----------------------- */
+
+div.carousselDiv{
+    
+}
+
+/* ----- Caroussel Display ----- */
+
+div.carousselDisplay{
+    
+}
+
+div.carousselInfo{
+    
+}
+
+div.carousselPrice{
+    
+}
+
+h2.carousselTitle{
+    
+}
+
+h2.carousselSubtitle{
+    
+}
+
+p.carousselInfo{
+    
+}
+
+div.carousselIconesContainer{
+    
+}
+
+div.carousselIcones{
+    
+}
+
+/* ----- Caroussel Menu ----- */
+
+div#carousselMenuContainer{
+    
+}
+
+div.carousselMenuItem{
+    
+}
+
+div.carousselMenuItemHeader{
+    
+}
+
+div.carousselMenuItemHeaderFiller{
+    
+}
+
+div.carousselMenuItemInfo{
+    
+}
+
+div.carousselMenuItemInfoTitle{
+    
+}
+
+p.carousselMenu{
+    
 }
