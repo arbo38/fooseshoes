@@ -1,31 +1,20 @@
-<!DOCTYPE html>
-<!--
-Integration de la maquette FooseShoes
--->
-<html>
-    <head>
-        <title>FooseShoes Market</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://use.fontawesome.com/940c48a510.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script> // Appel du script JS via la fonction document.ready afin d'améliorer les performances
-            $(document).ready(function(){ 
-            });
-        </script>
-        <style>
-            body{
-                background-color: black;
-            } 
-        </style>
-    </head>
-    <body>
-        <img src="images export/chaussure_1.png"
-        
-        
-        
-        
-        <script src=""></script>
-    </body>
-</html>
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
+@font-face {
+    font-family:"Aller Light";src:url("../fonts/Aller_Light/Aller_Lt.eot?") 
+    format("eot"),url("../fonts/Aller_Light/Aller_Lt.woff") 
+    format("woff"),url("../fonts/Aller_Light/Aller_Lt.ttf") 
+    format("truetype"),url("../fonts/Aller_Light/Aller_Lt.svg#Aller-Light") 
+    format("svg");font-weight:normal;font-style:normal;
+}
+
+body{
+    font-family: "Aller Light", Helvetica, Verdana, Arial, Sans-Serif;
+}
+
+.aller{
+    font-family: "Aller Light";
+}
+
+.normal{
+    font-family: Helvetica, Verdana, Arial, Sans-Serif;
+}
