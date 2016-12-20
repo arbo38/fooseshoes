@@ -10,142 +10,349 @@
 
 body{
     font-family: "Aller Light", Helvetica, Verdana, Arial, Sans-Serif;
+    background-color: #282828; // Noir clair
+    padding: 0px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .page_wrapper{
+    background-color: #ebe7df; // Blanc creme
+    margin: 0px;
+    width: 1120px;
     
 }
 
+a{
+    text-decoration: none;
+}
 
 /* ----------------------- Header ----------------------- */
 
 /* ----- Logo Banner ----- */
 
-div.header{
+header{
+    
+    margin: 0px;
+    padding: 0px;
     
 }
 
 div.headerLogoBanner{
-    
+    min-height: 36px;
+    background-color: #242424; 
+    display: flex;
+    position: relative;
 }
 
 div#logo{
-    
+    margin-left: 184px;
+    color: #57c5a0; /* Bleu-vert */
+    font-size: 21px;
+    min-height: 36px;
+    line-height: 36px;
 }
 
 div#loginContainer{
     
+    display: flex;
+    color: #7d7d7d;
+    position: absolute;
+    right: 184px;
+    min-height: 36px;
+    font-size: 9px;
 }
 
 div#search{
-    
+    font-size: 15px;
+    min-height: 36px;
+    line-height: 36px;
+    text-align: center;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-right: 1px solid #383838;
 }
 
 div#login{
-    
+
+    min-height: 36px;
+    line-height: 36px;
+    text-align: center;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-right: 1px solid #383838;
+
+}
+
+div#loginContainer a{
+    color: #7d7d7d;
+}
+
+div#loginContainer a:hover{
+    color: white;
 }
 
 /* ----- Navigation Menu ----- */
 
 nav{
-    
+    background-color: #ffffff;
+    font-size: 13px;
+    color: #242424;
+    display: flex;
+    min-height: 48px;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+nav a{
+    color: #242424;
 }
 
 div.navMenu{
-    
+    margin-left: 192px;
+
 }
 
 ul.navMenu{
+    min-height: 48px;
+    line-height: 48px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
     
 }
 
 li.navMenu{
-    
+    display: inline-block;
+    margin: 0px;
+    flex-grow: 1;
 }
 
+li.navMenu a{
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+
+}
+
+li.navMenu a:hover{
+    background-color: #57c5a0;
+    color: white;
+
+}
+
+
 ul.subNavMenu{
+    display: none;
     
 }
 
 li.subNavMenu{
-    
+    display: none;
 }
 
 div.navIcones{
-    
+    border-left: 1px solid #cccccc;
+    min-height: 48px;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    right: 184px;
+    display: flex;
 }
 
 div.iconesItems{
-    
+    //padding-right: 19px;
 }
+
+div.navIcones a{
+    border-right: 1px solid #cccccc;
+    text-decoration: none;
+    padding-right: 19px;
+    padding-left: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+div.navIcones i{
+    line-height: 48px;
+    margin-right: 5px;
+    color: #6e6e6e;
+}
+
+div.navIcones span{
+    height: 16px;
+    width: 16px;
+    margin: auto;
+    text-align: center;
+    font-size: 10px;
+    line-height: 16px;
+    background-color: #adadad;
+    border-radius: 3px;
+    color: white;
+}
+
+div.navIcones span.active{
+    background-color: #57c5a0;
+}
+
+
 
 
 /* ----------------------- Caroussel ----------------------- */
 
 div.carousselDiv{
+    width: 1120px;
     
 }
 
 /* ----- Caroussel Display ----- */
 
-div.carousselDisplay{
-    
+div#carousselDisplay{
+    background: red;
+    background: #f2eeeb;
+    display: flex;
+}
+
+img.caroussel{
+    width: 560px;
+    margin: 0px;
 }
 
 div.carousselInfo{
-    
+    margin: 0px;
+    width: 560px;
+    padding-left: 32px;
+    position: relative;
 }
 
 div.carousselPrice{
-    
+    width: 53px;
+    height: 53px;
+    color: white;
+    background: #57c5a0;
+    line-height: 53px;
+    font-size: 11px;
+    text-align: center;
+    margin: 0px;
+    margin-top: 56px;
 }
 
 h2.carousselTitle{
-    
+    font-size: 32px;
+    margin: 0px;
+    margin-top: 14px;
+    font-weight: normal;
+    padding: 0px;
+
 }
 
 h2.carousselSubtitle{
-    
+    font-size: 32px;
+    font-weight: normal;
+    position: relative;
+    top: -5px;
+    padding: 0px;
+    margin: 0px;
 }
 
-p.carousselInfo{
-    
+/*  border: 1px solid black; */
+p.caroussel{
+    margin: 0px;
+    padding: 0px;
+    width: 60%;
+
 }
 
 div.carousselIconesContainer{
-    
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-start;
 }
 
-div.carousselIcones{
-    
+div.carousselIconesContainer i{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background-color: white;
+    margin: 5px;
+    color: #7c7c7c;
+}
+
+div.carousselIconesContainer i.active{
+    color: #57c5a0;
 }
 
 /* ----- Caroussel Menu ----- */
 
 div#carousselMenuContainer{
+    background-color: #2e2e2e;
+    color: #acacac;
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
     
 }
 
 div.carousselMenuItem{
-    
+
+    margin: 0px;
+    width: 20%;
 }
 
 div.carousselMenuItemHeader{
-    
+    background: black;
+    height: 10px;
+    border-right: 2px solid grey;
+    border-left: 2px solid grey;
 }
 
 div.carousselMenuItemHeaderFiller{
-    
+    background: black;
+    height: 6px;
+    width: 90%;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
+
+
+div.carousselMenuActive{
+    background: #57c5a0;
+    height: 6px;
+    width: 90%;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+
 
 div.carousselMenuItemInfo{
     
 }
 
-div.carousselMenuItemInfoTitle{
-    
+h3.carousselMenuItemInfoTitle{
+    text-align: center;
+}
+
+h3.carousselMenuItemInfoTitle a{
+    text-align: center;
+    color: #acacac;
+}
+
+h3.carousselMenuItemInfoTitle a:hover{
+    color: #57c5a0;
+        
 }
 
 p.carousselMenu{
-    
+    text-align: center;
 }

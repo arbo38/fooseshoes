@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!--
-Integration de la maquette FooseShoes
--->
+
 <html>
     <head>
         <title>FooseShoes Market</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <script src="https://use.fontawesome.com/940c48a510.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script> // Appel du script JS via la fonction document.ready afin d'améliorer les performances
@@ -23,7 +20,7 @@ Integration de la maquette FooseShoes
 
         <div class="page_wrapper">
         
-            <div class="header">
+            <header>
                 <div class="headerLogoBanner">
                     <div id="logo">
                         FOSSESHOES
@@ -31,49 +28,65 @@ Integration de la maquette FooseShoes
                     
                     <div id="loginContainer">
                         <div id="search">
-                            Loupe
+                            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                         </div>
                         <div id="login">
-                            LOGIN or REGISTER
+                            <a href="#">LOGIN or REGISTER</a>
                         </div>
                     </div>
                 </div>
-            </div>
+
             
             <nav>
                 <div class="navMenu">
                     <ul class="navMenu">
-                        <li class="navMenu">Home</li>
-                        <li class="navMenu">Products
+                        <li class="navMenu"><a href="#">Home</a></li>
+                        <li class="navMenu"><a href="#">Products</a>
                             <ul class="subNavMenu">
-                                <li class="subNavMenu">Shoes</li>
-                                <li class="subNavMenu">Boots</li>
-                                <li class="subNavMenu">Sandals</li>
-                                <li class="subNavMenu">Accessories</li>
+                                <li class="subNavMenu"><a href="#">Shoes</a></li>
+                                <li class="subNavMenu"><a href="#">Boots</a></li>
+                                <li class="subNavMenu"><a href="#">Sandals</a></li>
+                                <li class="subNavMenu"><a href="#">Accessories</a></li>
                             </ul>
                         </li>
-                        <li class="navMenu">About</li>
-                        <li class="navMenu">Pages
+                        <li class="navMenu"><a href="#">About</a></li>
+                        <li class="navMenu"><a href="#">Pages</a>
                             <ul class="subNavMenu">
-                                <li class="subNavMenu">My account</li>
-                                <li class="subNavMenu">Orders</li>
-                                <li class="subNavMenu">Sandals</li>
-                                <li class="subNavMenu">Accessories</li>
+                                <li class="subNavMenu"><a href="#">My account</a></li>
+                                <li class="subNavMenu"><a href="#">Orders</a></li>
+                                <li class="subNavMenu"><a href="#">Sandals</a></li>
+                                <li class="subNavMenu"><a href="#">Accessories</a></li>
                             </ul>
                         </li>
-                        <li class="navMenu">Blog</li>
-                        <li class="navMenu">Contact</li>
+                        <li class="navMenu"><a href="#">Blog</a></li>
+                        <li class="navMenu"><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="navIcones">
-                    <div class="iconesItems">Star 30</div>
-                    <div class="iconesItems">Cart 0</div>
+                        <a href="#" title="favorite" >
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <span>30</span>
+                        </a>
+
+                        <a href="#" title="cart" >
+                            <i class="fa fa-opencart" aria-hidden="true"></i> 
+                            <span class="active">0</span>
+                        </a>
+
+                    <!-- <div class="iconesItems">
+                        <a href="#" title="cart" >
+                            <i class="fa fa-opencart" aria-hidden="true"></i> 
+                            <span id="active">0</span>
+                        </a>
+                    </div> -->
+                   
                 </div>
             </nav>
-            
+            </header>
             
             <div class="carousselDiv">
                 <div id="carousselDisplay">
+                    <img src="images/carousselImg.jpg" alt="image chaussure" class="caroussel" />
                     <div class="carousselInfo">
                         <div class="carousselPrice">
                             $145.99
@@ -86,10 +99,10 @@ Integration de la maquette FooseShoes
                             Donec dignissim dolor eget..
                         </p>
                         <div class="carousselIconesContainer">
-                            <div id="eye" class="carousselIcones">Eye</div>
-                            <div id="star" class="carousselIcones">Star</div>
-                            <div id="checkout" class="carousselIcones">Checkout</div>
-                            <div id="cart" class="carousselIcones">Cart</div>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <i class="fa fa-share-square-o" aria-hidden="true"></i>
+                            <i class="fa fa-opencart active" aria-hidden="true"></i> 
                         </div>
                     </div>
                 </div>
@@ -97,11 +110,12 @@ Integration de la maquette FooseShoes
                 <div id="carousselMenuContainer">
                     <div class="carousselMenuItem">
                         <div class="carousselMenuItemHeader">
-                            <div class="carousselMenuItemHeaderFiller">
+                            <div class="carousselMenuActive carousselMenuItemHeaderFiller">
+
                             </div>
                         </div>
                         <div class="carousselMenuItemInfo">
-                            <h3 class="carousselMenuItemInfoTitle">Pink Shoes</h3>
+                            <h3 class="carousselMenuItemInfoTitle"><a href="#">Pink Shoes</a></h3>
                             <p class="carousselMenu">Now at $145,99</p>
                         </div>
                     </div>
@@ -111,7 +125,7 @@ Integration de la maquette FooseShoes
                             </div>
                         </div>
                         <div class="carousselMenuItemInfo">
-                            <h3 class="carousselMenuItemInfoTitle">Anna Field</h3>
+                            <h3 class="carousselMenuItemInfoTitle"><a href="#">Anna Field</a></h3>
                             <p class="carousselMenu">Limited Edition</p>
                         </div>
                     </div>
@@ -121,7 +135,7 @@ Integration de la maquette FooseShoes
                             </div>
                         </div>
                         <div class="carousselMenuItemInfo">
-                            <h3 class="carousselMenuItemInfoTitle">Prada</h3>
+                            <h3 class="carousselMenuItemInfoTitle"><a href="#">Prada</a></h3>
                             <p class="carousselMenu">Summer is coming</p>
                         </div>
                     </div>
@@ -131,7 +145,7 @@ Integration de la maquette FooseShoes
                             </div>
                         </div>
                         <div class="carousselMenuItemInfo">
-                            <h3 class="carousselMenuItemInfoTitle">Casadei</h3>
+                            <h3 class="carousselMenuItemInfoTitle"><a href="#">Casadei</a></h3>
                             <p class="carousselMenu">All colors available</p>
                         </div>
                     </div>
@@ -141,7 +155,7 @@ Integration de la maquette FooseShoes
                             </div>
                         </div>
                         <div class="carousselMenuItemInfo">
-                            <h3 class="carousselMenuItemInfoTitle">Mellow Yellow</h3>
+                            <h3 class="carousselMenuItemInfoTitle"><a href="#">Mellow Yellow</a></h3>
                             <p class="carousselMenu">Free delivery</p>
                         </div>
                     </div>
