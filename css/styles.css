@@ -215,8 +215,9 @@ div.carousselDiv{
 
 div#carousselDisplay{
     background: red;
-    background: #f2eeeb;
+    background: url(../images/carousselBg.jpg) repeat-x;      /*#f2eeeb;*/
     display: flex;
+    color: #242424;
 }
 
 img.caroussel{
@@ -370,6 +371,13 @@ div#onSaleSeparator{
     justify-content: center;
 }
 
+div.onSaleItemContainer{
+    width: 80%;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 div.onSaleItems{
     margin: 20px;
     width: 240px;
@@ -386,11 +394,13 @@ div.onSaleMsg{
     background: rgba(0, 0, 0, 0.8);
     height: 48px;
     line-height: 48px;
-    padding: 0 10px 0 10px;
+    padding: 0 14px 0 14px;
+    font-size: 20px;
 }
 
 div.onSaleMsg a{
     color: white;
+    
 }
 
 div.onSaleMsg a:hover{
@@ -399,54 +409,183 @@ div.onSaleMsg a:hover{
 
 /* -------------------- Section Main -------------------- */
 
+
+
 section.main{
-    border: 1px solid red;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    padding: 20px 0 40px 0;
+    margin: 0px;
 
 }
 
+div.mainContainer{
+    width: 80%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 section.main h2{
-    border: 1px solid blue;
-    width: 752px;
-    margin: auto;
+    width: 100%;
+    position: relative;
     font-size: 20px;
     font-weight: normal;
-    position: relative;
+    height: 25px;
+    padding-left: 20px;
 
 }
 
 section.main h2 a{
-    border: 1px solid green;
-    align-self: flex-end;
+    display: block;
     position: absolute;
-    right: 0px;
-    color: #bcb5a7;
+    right: 20px;
+    top: 0px;
+    border: 1px solid #bcb5a7;
     font-size: 12px;
-    font-weight: bold;
-    display: inline-block;
+    color: #bcb5a7;
+    line-height: 24px;
+    height: 24px;
+    padding: 0 15px 0 15px;
     
 }
 
-div.seeRightButton a{
+section.main h2 a:hover{
+    background: #57c5a0;
+    color: white;
     
 }
 
-div.seeRightButton a:hover{
-    
+div.mainItemContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
 }
+    
 
 div.mainItem{
-    border: 1px solid purple;
-    margin: 20px;
+    background: white;
+    
 }
 
 img.mainImg{
     width: 240px;
+    border-bottom: 1px solid #cccccc;
+}
+
+div.mainItemInfo{
+    position: relative;
+    padding: 7px 10px 7px 10px;
+    
+    
+}
+
+div.mainItemPrice{
+    width: 53px;
+    height: 53px;
+    line-height: 53px;
+    background: #57c5a0;
+    position: absolute;
+    bottom: 0px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+div.mainItemName{
+    margin-left: 63px;
+    font-size: 15px;
+    font-weight: bold;
+    
 }
 
 
+/* ----------------------- Aside Main ----------------------- */
+
+aside.main{
+    
+    display: flex;
+    justify-content: center;
+}
+
+div.asideContainer{
+    border-top: 1px solid #cccccc;
+    width: 80%;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+div.asideSquareItem{
+    width: 180px;
+    height: 120px;
+    margin: 20px 0 20px 20px;
+    background: #dfdbd4;
+    padding: 30px 15px 30px 15px;
+    
+}
+
+h3.asideSquareItem{
+    font-size: 12px;
+    margin: 0px;
+}
+
+p.asideSquareItem{
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+span.signature{
+    font-style: italic;
+}
+
+
+div.asideRectangleItem{
+    width: 370px;
+    height: 120px;
+    margin: 20px;
+    background: #dfdbd4;
+    padding: 30px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div.blogPreviewContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 10px 10px 0px;;
+}
+
+div.blogDate{
+    font-size: 10px;
+    color: white;
+    background: #57c5a0;
+    text-align: center;
+    width: 27px;
+    height: 27px;
+    padding: 2px;
+    
+}
+
+div.blogPreview{
+    padding: 0px;
+    margin-left: 10px;
+}
+
+h4.blogPreview{
+    margin: 0px;
+    font-size: 12px;
+}
+
+p.blogPreview{
+    margin: 0px;
+    font-size: 10px;
+}
 
 
 
