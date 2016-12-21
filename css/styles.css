@@ -414,7 +414,7 @@ div.onSaleMsg a:hover{
 section.main{
     display: flex;
     justify-content: center;
-    padding: 20px 0 40px 0;
+    padding: 20px 0 0px 0;
     margin: 0px;
 
 }
@@ -501,17 +501,24 @@ div.mainItemName{
     
 }
 
+div#separator{
+    width: 100%;
+    border-top: 1px solid #cccccc;
+    height: 1px;
+    margin: 40px 20px 0px 20px;
+    
+}
+
 
 /* ----------------------- Aside Main ----------------------- */
 
 aside.main{
-    
     display: flex;
     justify-content: center;
 }
 
 div.asideContainer{
-    border-top: 1px solid #cccccc;
+    
     width: 80%;
     padding: 0 20px 0 20px;
     display: flex;
@@ -534,7 +541,7 @@ h3.asideSquareItem{
 }
 
 p.asideSquareItem{
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.5;
 }
 
@@ -568,7 +575,7 @@ div.blogDate{
     text-align: center;
     width: 27px;
     height: 27px;
-    padding: 2px;
+    padding: 4px;
     
 }
 
@@ -584,13 +591,135 @@ h4.blogPreview{
 
 p.blogPreview{
     margin: 0px;
-    font-size: 10px;
+    font-size: 11px;
+}
+
+/* ----------------------- Footer ----------------------- */
+
+footer{
+
+}
+/* ----- Footer Widget ----- */
+
+div.footerWidget{
+    width: 100%;
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    background: #242424;
+    color: #a4a4a4;
+}
+
+div.footerWidgetContainer{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
 
+div.widgetContainer{
+    width: 30%;
+}
+
+h3.widget{
+    color: #7d7d7d;
+    font-size: 13px;
+    font-weight: 600px;
+}
+
+
+p.widget{
+    font-size: 10px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+
+div.widgetTweet{
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+
+span.tweeterAt{
+    color: #57c5a0;
+    font-style: italic;
+}
+
+
+span.tweeterDate{
+    color: #c4c5bf;
+    font-weight: bold;
+}
+
+
+div.flickrImageContainer{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+img.flickr{
+    margin: 5px 0 5px 0;
+}
+
+
+/* ----- Footer Newletter ----- */
+
+div.footerNewsletter{
+    border: 1px solid red;
+    width: 100%;
+    
+}
+
+div.footerNewsletterContainer{
+    border: 1px solid blue;
+}
+
+    
 
 
 
+div.{
+    
+}
 
+div.{
+    
+}
+
+div.{
+    
+}
+
+/* ----- Footer Reference ----- */
+
+div.footerReference{
+    border: 1px solid red;
+    width: 100%;
+}
+
+div.footerReferenceContainer{
+    border: 1px solid blue;
+    
+}
+
+div.{
+    
+}
+
+div.{
+    
+}
+
+div.{
+    
+}
+
+div.{
+    
+}
 
 
