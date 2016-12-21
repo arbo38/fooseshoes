@@ -197,9 +197,10 @@ div.navIcones span{
     color: white;
 }
 
-div.navIcones span.active{
-    background-color: #57c5a0;
+div.navIcones span:hover{
+    background: #57c5a0;
 }
+
 
 
 
@@ -286,9 +287,10 @@ div.carousselIconesContainer i{
     color: #7c7c7c;
 }
 
-div.carousselIconesContainer i.active{
+div.carousselIconesContainer i:hover{
     color: #57c5a0;
 }
+
 
 /* ----- Caroussel Menu ----- */
 
@@ -608,6 +610,7 @@ div.footerWidget{
     justify-content: center;
     background: #242424;
     color: #a4a4a4;
+    border-bottom: 2px solid #1c1c1c;
 }
 
 div.footerWidgetContainer{
@@ -639,6 +642,7 @@ div.widgetTweet{
     font-style: italic;
     font-size: 10px;
     margin-top: 10px;
+    font-weight: 600;
 }
 
 
@@ -655,7 +659,7 @@ span.tweeterDate{
 
 
 div.flickrImageContainer{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -669,57 +673,96 @@ img.flickr{
 /* ----- Footer Newletter ----- */
 
 div.footerNewsletter{
-    border: 1px solid red;
     width: 100%;
-    
+    padding: 25px 0px 25px 0px;
+    display: flex;
+    justify-content: center;
+    background: #242424;
+    color: #a4a4a4;
 }
 
 div.footerNewsletterContainer{
-    border: 1px solid blue;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
 
-    
+form.newsletterSubscrit{
+    display: flex;
+    justify-content: flex-start;
+}    
 
 
 
-div.{
+input.newsLetter{
+    background: #2e2e2e;
+    border-radius: none;
+    font-style: italic;
+    color: #a4a4a4;
+    height: 29px;
+    line-height: 29px;
+    border: none;
+    padding: 0 10px 0 25px;
+    margin: 0px;
+}
+
+input#newSubmit{
+    background: #7d7d7d;
+    font-style: normal;
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+    margin: 0px;
+    color: #2e2e2e;
+    padding: 0px;
+}
+
+div.socialIcones{
     
 }
 
-div.{
-    
-}
-
-div.{
-    
+span.social{
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+    background: #2e2e2e;
 }
 
 /* ----- Footer Reference ----- */
 
 div.footerReference{
-    border: 1px solid red;
     width: 100%;
+    padding: 25px 0px 25px 0px;
+    display: flex;
+    justify-content: center;
+    background: #2e2e2e;
+    color: #a4a4a4;
 }
 
 div.footerReferenceContainer{
-    border: 1px solid blue;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
-div.{
+div.copyrightContainer{
+    font-size: 12px;
+}
+
+div.referenceLink{
     
 }
 
-div.{
-    
+div.referenceLink a{
+    color: #a4a4a4;
+    font-size: 12px;
 }
 
-div.{
-    
-}
-
-div.{
-    
+div.referenceLink a:hover{
+    color: #57c5a0;
 }
 
 
