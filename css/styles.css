@@ -104,6 +104,7 @@ nav{
     padding: 0px;
     margin: 0px;
     position: relative;
+    
 }
 
 nav a{
@@ -128,6 +129,7 @@ li.navMenu{
     display: inline-block;
     margin: 0px;
     flex-grow: 1;
+    position: relative; /* CSS DROPDOWN */
 }
 
 li.navMenu a{
@@ -142,17 +144,21 @@ li.navMenu a{
 li.navMenu a:hover{
     background-color: #57c5a0;
     color: white;
-
 }
 
 
-ul.subNavMenu{
-    display: none;
-    
+ul.subNavMenu{ /* CSS DROPDOWN */
+    display: none; 
+    position: absolute; 
+    left: 0; 
+    margin: 0 0 0 -1px; 
+    padding: 0;
+    list-style: none;
+    background: #ffffff;
 }
 
-li.subNavMenu{
-    display: none;
+li.subNavMenu{  /* CSS DROPDOWN */
+    border-bottom: 1px dashed #eeeeee;
 }
 
 div.navIcones{
