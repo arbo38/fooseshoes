@@ -696,6 +696,7 @@ div.footerNewsletterContainer{
 form.newsletterSubscrit{
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
 }    
 
 
@@ -708,8 +709,10 @@ input.newsLetter{
     height: 29px;
     line-height: 29px;
     border: none;
-    padding: 0 10px 0 25px;
+    text-align: center;
+    padding: 0 50px 0 20px;
     margin: 0px;
+    width: 160px;
 }
 
 input#newSubmit{
